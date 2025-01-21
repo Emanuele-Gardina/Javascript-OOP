@@ -14,8 +14,8 @@ formShop.addEventListener("submit", function (event) {
   const ownerInput = document.getElementById("ownerName");
   const speciesInput = document.getElementById("species");
   const breedInput = document.getElementById("breed");
-  const newPet = new Pet(nameInput.value, ownerInput.value, speciesInput.value, breedInput.value);
-  pets.push(newPet);
-  console.log(newPet);
+  const animal = new Pet(nameInput.value, ownerInput.value, speciesInput.value, breedInput.value);
+  pets.push(animal);
+  console.log(animal);
   console.log(pets);
 });

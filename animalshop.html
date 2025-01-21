@@ -4,18 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animal Shop</title>
+    <style>
+      form {
+        width: max-content;
+      }
+      label {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <form id="formShop">
-      <label for="name">Nome</label>
-      <input type="text" id="name" />
-      <label for="ownerName">Proprietario</label>
-      <input type="text" id="ownerName" />
-      <label for="species">Specie</label>
-      <input type="text" id="species" />
-      <label for="breed">Razza</label>
-      <input type="text" id="breed" />
+      <div>
+        <label for="name">Nome</label>
+        <input type="text" id="name" />
+      </div>
+
+      <div>
+        <label for="ownerName">Proprietario</label>
+        <input type="text" id="ownerName" />
+      </div>
+
+      <div>
+        <label for="species">Specie</label>
+        <input type="text" id="species" />
+      </div>
+
+      <div>
+        <label for="breed">Razza</label>
+        <input type="text" id="breed" />
+      </div>
+
       <button type="submit">Aggiungi</button>
+      <button type="button" class="form-reset">Cancella Dati</button>
     </form>
     <script src="./animalshop.js"></script>
   </body>
